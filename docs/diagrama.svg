@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 420" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1f6feb"/></marker>
+    <marker id="s" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#8250df"/></marker>
+  </defs>
+  <rect width="900" height="420" rx="14" fill="#ffffff"/>
+  <text x="450" y="34" text-anchor="middle" font-size="20" font-weight="700" fill="#0d2b45">AquaGuard · Banco de pruebas en circuito cerrado</text>
+
+  <!-- Hydraulic loop -->
+  <g font-size="14" fill="#0d2b45" text-anchor="middle">
+    <rect x="40" y="80" width="150" height="90" rx="10" fill="#dbeafe" stroke="#1f6feb" stroke-width="2"/>
+    <text x="115" y="118" font-weight="700">Tanque</text><text x="115" y="140" font-size="12">nivel: HC-SR04</text>
+
+    <rect x="260" y="80" width="150" height="90" rx="10" fill="#dbeafe" stroke="#1f6feb" stroke-width="2"/>
+    <text x="335" y="118" font-weight="700">Bomba</text><text x="335" y="140" font-size="12">RS-360SH</text>
+
+    <rect x="480" y="80" width="150" height="90" rx="10" fill="#dbeafe" stroke="#1f6feb" stroke-width="2"/>
+    <text x="555" y="118" font-weight="700">Caudalímetro</text><text x="555" y="140" font-size="12">YF-S201</text>
+
+    <rect x="700" y="80" width="160" height="90" rx="10" fill="#dbeafe" stroke="#1f6feb" stroke-width="2"/>
+    <text x="780" y="118" font-weight="700">Portafiltro</text><text x="780" y="140" font-size="12">cartucho de prueba</text>
+
+    <rect x="480" y="210" width="150" height="70" rx="10" fill="#e5e7eb" stroke="#6b7280" stroke-width="2" stroke-dasharray="6 4"/>
+    <text x="555" y="240" font-weight="700">Turbidez</text><text x="555" y="262" font-size="12">TSW-20M (pendiente)</text>
+  </g>
+  <g stroke="#1f6feb" stroke-width="3" fill="none" marker-end="url(#a)">
+    <path d="M190 125 H255"/><path d="M410 125 H475"/><path d="M630 125 H695"/>
+    <path d="M780 170 V245 H635"/><path d="M480 245 H115 V175"/>
+  </g>
+  <text x="300" y="238" font-size="12" fill="#1f6feb" text-anchor="middle">retorno al tanque · manguera ½"</text>
+
+  <!-- Electronics -->
+  <g font-size="14" fill="#0d2b45" text-anchor="middle">
+    <rect x="40" y="320" width="190" height="70" rx="10" fill="#ede9fe" stroke="#8250df" stroke-width="2"/>
+    <text x="135" y="350" font-weight="700">Arduino</text><text x="135" y="372" font-size="12">nivel_hcsr04 · 9600 baud</text>
+
+    <rect x="480" y="320" width="190" height="70" rx="10" fill="#ede9fe" stroke="#8250df" stroke-width="2"/>
+    <text x="575" y="350" font-weight="700">ESP32</text><text x="575" y="372" font-size="12">caudal_yfs201 · 115200 baud</text>
+
+    <rect x="720" y="320" width="140" height="70" rx="10" fill="#fef3c7" stroke="#b45309" stroke-width="2"/>
+    <text x="790" y="350" font-weight="700">PC</text><text x="790" y="372" font-size="12">registro y análisis</text>
+  </g>
+  <g stroke="#8250df" stroke-width="2" fill="none" stroke-dasharray="5 4" marker-end="url(#s)">
+    <path d="M100 175 V315"/><path d="M640 150 H665 V315"/><path d="M555 280 V315"/>
+    <path d="M135 390 V408 H790 V396"/><path d="M670 355 H715"/>
+  </g>
+</svg>
