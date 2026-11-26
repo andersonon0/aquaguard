@@ -24,7 +24,7 @@ void setup() {
     contarPulsos,
     FALLING
   );
-  Serial.println("AQUACARD - CAUDALIMETRO INICIADO");
+  Serial.println("AQUAGUARD - CAUDALIMETRO INICIADO");
   tiempoAnterior = millis();
 }
 
